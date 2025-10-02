@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+     <link rel="stylesheet" href="/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+        <h3>LOG IN</h3>
+        <form action="/auth/login" method="POST">
+    
+            <label for="stdid">Enter Student_id</label>
+            <input id="stdid" placeholder="student_id" name="student_id" >
+            <label for="pa">Enter password</label>
+            <input id="pa" placeholder="password" name="pass" type="password" minlength="0" maxlength="8">
+            <button id="b1">LOG IN</button>
+
+            
+        
+        </form>
+        {{#if message}}
+       <p>{{message}}</p>
+       {{/if}}
+       </div>
+    </div>
+
+    <div class="login-link">
+    Do Not have an Account?<a href="/register"> Register</a>
+
+  </div>
+</body>
+</html>

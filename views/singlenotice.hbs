@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{notice.title}}</title>
+    <link rel="stylesheet" href="/viewnotice.css">
+</head>
+<body>
+    <div class="container">
+        <h2>{{notice.title}}</h2>
+        <p><strong>Date:</strong> {{notice.date}}</p>
+        <p><strong>Uploaded:</strong> {{notice.created_at}}</p>
+
+        <hr>
+
+        <!-- Display PDF -->
+        <iframe src="{{fileUrl}}" width="100%" height="600px" style="border:none;"></iframe>
+
+    
+        <br><br>
+        <a href="/viewnotice">⬅ Back to Notices</a>
+    </div>
+</body>
+</html>

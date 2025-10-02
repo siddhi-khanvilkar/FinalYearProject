@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Table</title>
+  <link rel="stylesheet" href="/attendenceupload.css" />
+</head>
+<body>
+  <h2>Attendance for {{month}} {{year}}</h2>
+  <form action="/uploadattendence" method="POST">
+    <input type="hidden" name="class" value="{{students.[0].class}}">
+    <input type="hidden" name="month" value="{{month}}">
+    <input type="hidden" name="year" value="{{year}}">
+    <input type="hidden" name="working_days" value="{{working_days}}">
+
+    <table border="1">
+      <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Class</th>
+        <th>Present Days</th>
+      </tr>
+      {{#each students}}
+      <tr>
+        <td>{{this.student_id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.rollno}}</td>
+        <td>{{this.class}}</td>
+        <td><input type="number" name="attendance[{{this.student_id}}]" min="0" max="{{../working_days}}" required></td>
+       
+
+      </tr>
+      {{/each}}
+    </table>
+
+    <div id="message" style="color: green; margin-top: 15px;">
+  {{message}}
+</div>
+
+    
+
+
+    <button type="submit">Save Attendance</button>
+  </form>
+</body>
+<script>
+  const workingDays = parseInt('{{working_days}}', 10);
+  document.querySelectorAll('input[name^="attendance"]').forEach(input => {
+    input.addEventListener('input', () => {
+      let val = parseInt(input.value, 10);
+      if (val > workingDays) {
+        alert(`Present days cannot exceed working days (${workingDays}).`);
+        input.value = workingDays;
+      } else if (val < 0 || isNaN(val)) {
+        input.value = 0;
+      }
+    });
+  });
+</script>
+
+</html> 

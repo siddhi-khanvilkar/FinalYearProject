@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Upload Timetable</title>
+    <link rel="stylesheet" href="/uploadtimetable.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Timetable</h2>
+
+        <form action="/uploadtimetable" method="POST" enctype="multipart/form-data">
+            <!-- Class dropdown -->
+            <label for="studentClass">Select Class:</label>
+            <select id="studentClass" name="studentClass" required>
+                <option value="">--Select Class--</option>
+                <option value="FYIT">FYIT</option>
+                <option value="SYIT">SYIT</option>
+                <option value="TYIT">TYIT</option>
+            </select>
+            <br /><br />
+
+            <!-- Date input -->
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required />
+            <br /><br />
+
+            <!-- File upload -->
+            <label for="timetablePDF">Upload PDF:</label>
+            <input type="file" id="timetablePDF" name="timetablePDF" accept="application/pdf" required />
+            <br /><br />
+
+            <!-- Submit button -->
+            <button type="submit">Upload</button>
+        </form>
+
+        <br />
+        <a href="/teacherDashboard">⬅ Back to Dashboard</a>
+    </div>
+</body>
+</html>

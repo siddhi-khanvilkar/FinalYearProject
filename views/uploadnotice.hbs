@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Notice</title>
+    <link rel="stylesheet" href="/uploadnotice.css">
+</head>
+<body>
+    <h2>Upload Notice</h2>
+
+    <form action="/uploadnotice" method="POST" enctype="multipart/form-data">
+        <label for="title">Notice Title:</label><br />
+        <input type="text" id="title" name="title" required /><br /><br />
+
+        <label for="date">Upload Date:</label><br />
+        <input type="date" id="date" name="date" required /><br /><br />
+
+        <label for="noticePDF">Upload PDF:</label><br />
+        <input type="file" id="noticePDF" name="noticePDF" accept="application/pdf" required /><br /><br />
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <br />
+    <a href="/teacherDashboard">Back to Dashboard</a>
+</body>
+</html>

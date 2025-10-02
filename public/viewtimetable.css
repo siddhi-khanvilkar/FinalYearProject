@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Timetable iframe */
+iframe {
+    width: 100%;
+    max-width: 600px;   /* restrict width */
+    height: 500px;      /* smaller height */
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+/* Back Link */
+a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}

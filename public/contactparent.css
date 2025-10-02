@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #007BFF;
+}
+
+/* Messages container */
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+/* Individual message */
+.message {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.message-content {
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  position: relative;
+  font-size: 14px;
+}
+
+/* Sent by teacher (align right, green) */
+.message.teacher {
+  justify-content: flex-end;
+}
+
+.message.teacher .message-content {
+  background-color: #d4edda;
+  color: #155724;
+  border-bottom-right-radius: 0;
+}
+
+/* Sent by parent (align left, blue) */
+.message.parent {
+  justify-content: flex-start;
+}
+
+.message.parent .message-content {
+  background-color: #cce5ff;
+  color: #004085;
+  border-bottom-left-radius: 0;
+}
+
+/* Timestamp */
+.timestamp {
+  display: block;
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+  text-align: right;
+}
+
+/* No messages */
+.no-messages {
+  text-align: center;
+  color: #999;
+  margin: 20px 0;
+}
+
+/* Form */
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form input,
+.message-form textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.message-form textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+.message-form button {
+  align-self: flex-end;
+  padding: 10px 25px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background: #218838;
+}
+
+/* Back link */
+a {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.chat-container {
+  width: 70%;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.message {
+  margin: 10px 0;
+  display: flex;
+}
+
+.bubble {
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 70%;
+  font-size: 14px;
+}
+
+.message.parent .bubble {
+  background: #dfefff;
+  margin-right: auto;
+}
+
+.message.teacher .bubble {
+  background: #e2f7e2;
+  margin-left: auto;
+}
+
+.timestamp {
+  font-size: 0.75em;
+  color: #555;
+  margin-top: 5px;
+  display: block;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

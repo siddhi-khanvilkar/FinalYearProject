@@ -1,0 +1,96 @@
+*{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+body {
+    background: url("/images/final.JPG");
+    font-family: 'Poppins', sans-serif;
+    color:#045867;
+    height:85vh;
+    background-size:cover;
+}
+
+div form input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div form a{
+    justify-self: center;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-left: 190px;
+    
+}
+.login{
+    border: 2px solid #045867;
+    justify-self: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #045867;
+    width: 400px;
+    
+}
+.login h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family:sans-serif;
+    font-weight: 600;
+    
+}
+ .login input{
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    border: 2px solid #045867;
+    border-radius: 8px;
+    background-color:#c5e7ee;
+} 
+.login button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition:0.3s;
+    
+}
+.login button:hover{
+    background-color: #0b5ed7;
+    font-size: 18px;
+}
+
+.login-link{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    font-size: 20px;
+}
+
+.login-link a{
+    text-decoration: none;
+    color: #045867;
+}
+
+.login-link a:hover{
+    color: red;
+}

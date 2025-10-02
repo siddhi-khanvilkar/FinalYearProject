@@ -1,0 +1,191 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+body {
+  background-color: black;
+}
+
+.btn_one i {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -350px;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s linear;
+  padding-top: 60px; 
+}
+
+.sidebar_menu .logo {
+  position: fixed;
+  width: 300px;
+  height: 60px;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.sidebar_menu .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar_menu .btn_two i {
+  color: grey;
+  font-size: 25px;
+  font-weight: 700;
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+} */
+
+ .sidebar_menu .menu li {
+  list-style: none;
+ background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 14px 20px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0; 
+  
+}
+
+.sidebar_menu .menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .menu span,
+.sidebar_menu .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.btn_one i:hover {
+  font-size: 40px;
+}
+
+.btn_two i:hover {
+  font-size: 30px;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}
+
+/* Dashboard content area */
+.dashboard {
+  margin-left: 300px; /* space for sidebar */
+  padding: 40px;
+  color: white;
+} 
+
+.dashboard h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+} 
+
+.dashboard .subtitle {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 30px;
+} 
+
+/* Card layout */
+ .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+} */
+
+.card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+} */
+
+/* .card span {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+  color: #4CAF50;
+} */
+
+/* .card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+} */
+
+/* .card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+} */ 
+
+/* 
+

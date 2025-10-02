@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Attendance</title>
+  <link rel="stylesheet" href="/viewattendence.css">
+</head>
+<body>
+  <h2>Attendance Details</h2>
+
+  {{#if attendance.length}}
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Year</th>
+          <th>Working Days</th>
+          <th>Present Days</th>
+          <th>Percentage (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each attendance}}
+        <tr>
+          <td>{{this.month}}</td>
+          <td>{{this.year}}</td>
+          <td>{{this.working_days}}</td>
+          <td>{{this.present_days}}</td>
+          <td>{{this.percentage}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <p>No attendance records found.</p>
+  {{/if}}
+
+  <br>
+  <a href="/profile">Back to Dashboard</a>
+</body>
+</html>

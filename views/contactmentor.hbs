@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Mentor</title>
+  <link rel="stylesheet" href="/chat.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Conversation with Teacher</h2>
+
+    <div class="messages">
+      {{#if messages.length}}
+        {{#each messages}}
+          <div class="message {{sender}}">
+            <div class="bubble">
+              <strong>{{sender}}:</strong> {{message}}
+              <div class="timestamp">{{created_at}}</div>
+            </div>
+          </div>
+        {{/each}}
+      {{else}}
+        <p>No messages yet.</p>
+      {{/if}}
+    </div>
+
+    <form action="/sendmessageparent" method="POST" class="message-form">
+      <input type="hidden" name="parentName" value="{{parentName}}">
+      <input type="hidden" name="studentName" value="{{student_id}}">
+      <textarea name="message" placeholder="Type your message..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <a href="/profile" class="back-link">Back to Dashboard</a>
+  </div>
+</body>
+</html>
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Mentor</title>
+  <link rel="stylesheet" href="/contactparent.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h2>All Teacher Conversations</h2>
+
+    <div class="messages">
+      {{#if messages}}
+        {{#each messages}}
+          <div class="message {{sender}}">
+            <div class="message-content">
+              <strong>{{sender}} ({{parent_name}}):</strong> {{message}}
+              {{#if created_at}}
+                <span class="timestamp">{{created_at}}</span>
+              {{/if}}
+            </div>
+          </div>
+        {{/each}}
+      {{else}}
+        <p class="no-messages">No messages yet.</p>
+      {{/if}}
+    </div>
+
+    <form action="/sendmessageparent" method="POST" class="message-form">
+      <input type="text" name="parentName" placeholder="Parent Name" required>
+      <input type="text" name="studentName" placeholder="Student Name" required>
+      <textarea name="message" placeholder="Type your reply..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <a href="/profile">⬅ Back to Profile</a>
+  </div>
+</body>
+</html> --}}
