@@ -17,11 +17,7 @@ router.get("/login", (req, res) => res.render("login"));
 router.get("/teacherlogin", (req, res) => res.render("teacherlogin"));
 router.get("/teacherDashboard", (req, res) => res.render("teacherDashboard"));
 
-// //Attendance
-// router.get("/uploadattendence", (req, res) => res.render("uploadattendence"));
-// router.get("/loadStudents", attendanceCtrl.loadStudents);
-// router.get("/viewattendence", attendanceCtrl.viewAttendance); 
-// router.post("/uploadattendence", attendanceCtrl.saveAttendance);
+
 
 // Attendance
 router.get("/uploadattendence", (req, res) => res.render("uploadattendence"));  // Step 1: Teacher loads page

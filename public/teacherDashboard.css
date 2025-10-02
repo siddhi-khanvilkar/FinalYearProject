@@ -152,40 +152,6 @@ body {
   text-align: center;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, background 0.3s ease;
-} */
+} 
 
-/* .card span {
-  font-size: 40px;
-  margin-bottom: 10px;
-  display: block;
-  color: #4CAF50;
-} */
-
-/* .card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-} */
-
-/* .card p {
-  font-size: 14px;
-  color: #ccc;
-  margin-bottom: 12px;
-}
-
-.card a {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #4CAF50;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background-color: rgba(255, 255, 255, 0.15);
-} */ 
-
-/* 
 

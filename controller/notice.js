@@ -42,16 +42,7 @@ exports.uploadnotice = (req, res) => {
     }
 };
 
-// exports.getNotices = (req, res) => {
-//     const sql = "SELECT id, title, date, created_at FROM notices ORDER BY created_at DESC";
-//     db.query(sql, (err, results) => {
-//         if (err) {
-//             console.error("Database fetch error:", err);
-//             return res.status(500).send("Error fetching notices.");
-//         }
-//         res.render("viewnotice", { notices: results }); 
-//     });
-// };
+
 
 exports.getNotices = (req, res) => {
     const sql = "SELECT id, title, date, created_at FROM notices ORDER BY created_at DESC";

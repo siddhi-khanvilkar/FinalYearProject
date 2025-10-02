@@ -1,40 +1,4 @@
-{{!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Parent</title>
-  <link rel="stylesheet" href="/chat.css">
-</head>
-<body>
-  <div class="chat-container">
-    <h2>Parent Conversations</h2>
 
-    <div class="messages">
-      {{#if messages.length}}
-        {{#each messages}}
-          <div class="message {{sender}}">
-            <div class="bubble">
-              <strong>{{sender}} ({{parent_name}}):</strong> {{message}}
-              <div class="timestamp">{{created_at}}</div>
-            </div>
-          </div>
-        {{/each}}
-      {{else}}
-        <p>No messages yet.</p>
-      {{/if}}
-    </div>
-
-    <form action="/sendmessageteacher" method="POST" class="message-form">
-      <input type="text" name="parentName" placeholder="Parent Name" required>
-      <input type="text" name="studentName" placeholder="Student Name" required>
-      <textarea name="message" placeholder="Type your reply..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-
-    <a href="/teacherDashboard" class="back-link">Back to Dashboard</a>
-  </div>
-</body>
-</html> --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
